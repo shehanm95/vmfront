@@ -1,0 +1,15 @@
+.cir-personImage-holder {
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir-personImage {
+    height: 40px;
+    width: 40px;
+}

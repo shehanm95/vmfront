@@ -1,0 +1,19 @@
+.TouchFree img {
+    background-color: var(--light);
+    padding: 5px;
+    border-radius: 10px;
+    height: 70px;
+}
+
+.TouchFree {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vmin;
+}

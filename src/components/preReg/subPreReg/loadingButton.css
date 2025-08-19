@@ -1,0 +1,197 @@
+.loading-button {
+    cursor: default;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    background-color: #e6f0fa;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loading-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 0 3px;
+    opacity: 0;
+
+}
+
+:root {
+    --anim-time: 0.8s;
+}
+
+.loading-dot:nth-child(1) {
+    animation: load1 var(--anim-time) infinite;
+}
+
+.loading-dot:nth-child(2) {
+    animation: load2 var(--anim-time) infinite;
+}
+
+.loading-dot:nth-child(3) {
+    animation: load3 var(--anim-time) infinite;
+}
+
+.loading-dot:nth-child(4) {
+    animation: load4 var(--anim-time) infinite;
+}
+
+.loading-dot:nth-child(5) {
+    animation: load5 var(--anim-time) infinite;
+}
+
+@keyframes load1 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 2;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes load5 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

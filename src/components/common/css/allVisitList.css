@@ -1,0 +1,120 @@
+/* Table container */
+.visit-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Main table */
+.visit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+/* Table header */
+.visit-table-header {
+    background-color: #f5f5f5;
+}
+
+.visit-table-header-cell {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 800;
+    color: var(--primary);
+    border-bottom: 2px solid #ddd;
+    min-width: 100px;
+}
+
+/* Table body */
+.visit-table-body {
+    background-color: white;
+}
+
+.visit-table-row {
+    transition: background-color 0.2s;
+}
+
+.visit-table-row:hover {
+    background-color: #f9f9f9;
+}
+
+.visit-table-cell {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+/* Status indicators */
+.visit-table-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.visit-table-status.printed {}
+
+.visit-table-status.not-printed {}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .visit-table-header-cell,
+    .visit-table-cell {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* filter buttons */
+
+/* Filters styling */
+.prof-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.prof-filter-item {
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 10px;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.prof-filter-item:hover {
+    color: #333;
+}
+
+.prof-filter-item.active {
+    color: #2c3e50;
+    font-weight: bold;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.prof-filter-divider {
+    color: #ddd;
+    user-select: none;
+}
+
+.canceled-visit {
+    background-color: rgb(218, 218, 218) !important;
+    color: var(--primary-dark);
+    color: var(--disabled) !important;
+}
+
+.canceled-visit .outline_button {
+    background-color: rgb(218, 218, 218) !important;
+    color: var(--primary-dark);
+    color: var(--disabled) !important;
+    border: 1px solid var(--disabled);
+}

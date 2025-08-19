@@ -1,0 +1,17 @@
+.answer-button {
+    background-color: var(--light3);
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 70px;
+    color: var(--primary);
+}
+
+.answer-button-selected {
+    background-color: var(--primary);
+    color: var(--light);
+    border: 1px solid var(--primary-dark);
+}

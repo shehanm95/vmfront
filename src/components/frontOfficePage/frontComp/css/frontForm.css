@@ -1,0 +1,144 @@
+.f-form-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--primary);
+
+}
+
+.f-form-cernter-text {
+    text-align: center;
+}
+
+.f-form-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.f-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.f-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-form-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.f-form-input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+    color: var(--primary);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.f-form-input:focus {
+    border-color: var(--primary);
+}
+
+.f-form-error {
+    color: var(--danger);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.forgotPass {
+    color: var(--primarylink);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.f-form-submit {
+    padding: 10px 50px;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+.f-form-submit:hover {
+    background-color: var(--primarylink);
+}
+
+.code-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.code-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.code-input::-webkit-inner-spin-button,
+.code-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code-input {
+    -moz-appearance: textfield;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.front-Button {
+    background-color: var(--primary);
+    min-width: 80px;
+    padding: 8PX 25px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    outline-color: none;
+    border: none;
+    color: white;
+
+
+}
+
+.front-button-selected {
+    background-color: var(--primarylink);
+}
+
+.front-Button:disabled {
+    background-color: var(--disabled);
+}

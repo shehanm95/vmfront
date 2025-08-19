@@ -1,0 +1,180 @@
+.point-answering-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--light);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--light2);
+    font-family: "Inter", sans-serif;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.answered-Officer-question {
+    border: 2px solid var(--primary);
+    background-color: var(--light2);
+    border-radius: 10px;
+}
+
+.point-answering-prof-sec-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.point-answering-profile-section {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.point-answering-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+}
+
+.point-answering-profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.point-answering-visitor-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.point-answering-view-profile {
+    background-color: var(--light2);
+    border: none;
+    color: var(--primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.point-answering-special-notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary);
+}
+
+.point-answering-note-label {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.point-answering-note-count {
+    font-weight: bold;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.3rem;
+}
+
+.point-answering-add-note {
+    background-color: var(--light2);
+    border: none;
+    color: var(--primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.point-answering-note {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.point-answering-section {
+    margin-bottom: 1rem;
+}
+
+.point-answering-section-title {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.point-answering-request-box {
+    padding: 0.5rem;
+    background-color: var(--light1);
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+}
+
+.point-answering-highlight {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.point-answering-input-box {
+    background-color: var(--light1);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.point-answering-input-label {
+    font-size: 0.95rem;
+    color: var(--primary);
+}
+
+.point-answering-input-field {
+    padding: 0.4rem;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    font-size: 1rem;
+    outline: none;
+}
+
+.point-answering-small-btn {
+    align-self: center;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.point-answering-footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.point-answering-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

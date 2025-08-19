@@ -1,0 +1,331 @@
+.form-container {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    color: var(--primary);
+    font-family: "Inter", sans-serif;
+}
+
+.form-button {
+    padding: 10px 5px;
+}
+
+.w-300px {
+    width: 300px !important;
+}
+
+.sampleButton {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    cursor: default;
+}
+
+.sampleClose {
+    border-radius: 50%;
+    border: 1px solid var(--light);
+    padding: 5px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sampleClose p {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 20px;
+    width: 20px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    border-color: var(--primary);
+    outline-color: var(--primary);
+}
+
+.form-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-button-holder button {
+    min-width: 100px;
+    margin-left: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--light3);
+}
+
+.form-button-holder button:hover {
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+
+.from-question-item {
+    width: 100%;
+    background-color: var(--light3);
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.form-sublabel {
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 10px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--light2);
+    outline: 1px solid var(--light2);
+    ;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    color: var(--primary);
+}
+
+.form-error {
+    color: var(--danger) !important;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--placeHolderText);
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="%230281d0" d="M0 0l5 5 5-5H0z"/></svg>') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+.form-button {
+    padding: 8pte 16px;
+    background: var(--light3);
+    color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.form-image {
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.form-subgroup {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-time-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.form-time-input {
+    width: 60px;
+}
+
+.form-time-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.form-time-range-input {
+    width: 120px;
+}
+
+.form-time-range-label {
+    color: var(--primary);
+}
+
+.form-add-time-button {
+    width: 30px;
+    height: 30px;
+    background: var(--light3);
+    color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.form-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.form-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary);
+}
+
+.form-error-text {
+    color: var(--danger);
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.form-button-wrapper {
+    text-align: right;
+}
+
+.form-30 {
+    width: 300px !important;
+}
+
+.form-button:hover {
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.form-save-button {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+New Classes for Dynamic Question Form .form-question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-question-select {
+    padding: 8px;
+    border: 1px solid var(--light2);
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    color: var(--primary);
+    background: var(--light);
+    width: 100%;
+}
+
+.form-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-cancel-button {
+    padding: 8px 16px;
+    background: var(--light3);
+    color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.form-add-question-button {
+    color: var(--primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.form-add-question-button:hover {
+    color: var(--primary-dark);
+}
+
+
+/* service point */
+
+.form-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-cancel-button {
+    padding: 8px 16px;
+    background: var(--light3);
+    color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.form-save-button {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.form-button-wrapper {
+    text-align: right;
+}
+
+.formt-visitDateType {
+    padding: 5px;
+    background-color: var(--light1);
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+}

@@ -1,0 +1,39 @@
+.authenticationForm {
+    border: 3px solid var(--primary);
+    padding: clamp(10px, 4vmin, 40px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+
+.bigInputFields {
+    height: 45px;
+    border: 2.3px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+}
+
+.bigInputFields input {
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 500;
+
+}
+
+.bigButton {
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    font-size: 28px;
+    margin: 15px 0 15px 0;
+}

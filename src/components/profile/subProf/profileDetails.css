@@ -1,0 +1,153 @@
+.prof-outer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.prof-imageAndDetails {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.prof-img {
+    min-width: 120px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+}
+
+.prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prof-verifiedIcon {
+    border: 3px solid var(--primary);
+    position: absolute;
+    bottom: -10px;
+    right: -7px;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.verification-ok {
+    background-color: green;
+}
+
+.verification-warning {
+    background-color: orange;
+}
+
+.verificationIconTick {
+    color: white !important;
+}
+
+.verificationIconTick {
+    color: white !important;
+}
+
+.prof-details {
+    flex: 1;
+    /* font-size: 0.8rem; */
+}
+
+.prof-details-slot {
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.prof-detail-title {
+    width: 130px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-dark);
+}
+
+.prof-detail-value-slot {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prof-details-values-n-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.prof-detail-value {
+    min-width: 300px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.prof-details-buttons {
+    display: flex;
+    gap: 5px;
+    min-width: 300px
+}
+
+.prof-button {
+    padding: 5px 10px;
+    background-color: var(--light);
+    color: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--primary) !important;
+    border: none;
+    border-radius: 5px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.prof-button:hover {
+    background: var(--light2);
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .prof-imageAndDetails {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prof-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .prof-details-slot {
+        flex-wrap: wrap;
+    }
+
+    .prof-details-buttons {}
+
+    .prof-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .prof-imageAndDetails {
+        flex-direction: column;
+    }
+
+    .prof-details {
+        justify-content: center;
+        align-items: center;
+    }
+}

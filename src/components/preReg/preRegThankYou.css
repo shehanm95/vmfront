@@ -1,0 +1,181 @@
+/* Main container */
+.pre-thank-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Success state */
+.pre-thank-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: pre-thank-fadeIn 0.5s ease-in-out;
+}
+
+.pre-thank-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pre-thank-subtitle {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.pre-thank-instruction {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Countdown timer */
+.pre-thank-countdown {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin: 2rem 0;
+    font-weight: bold;
+    animation: pre-thank-pulse 1.5s infinite;
+}
+
+/* Error state */
+.pre-thank-error {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #fff6f6;
+    border: 1px solid #ffcccc;
+    border-radius: 8px;
+}
+
+.pre-thank-error-title {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.pre-thank-error-message {
+    color: #c0392b;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.pre-thank-error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Buttons */
+.pre-thank-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+.pre-thank-button-main {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+}
+
+.pre-thank-button-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.pre-thank-button-secondary {
+    background-color: transparent;
+    border: 1px solid #bdc3c7;
+    color: #7f8c8d;
+}
+
+.pre-thank-button:hover {
+    transform: translateY(-2px);
+}
+
+.pre-thank-button-main:hover,
+.pre-thank-button-primary:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.pre-thank-button-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+.pre-thank-button:active {
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes pre-thank-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pre-thank-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .pre-thank-content,
+    .pre-thank-error {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .pre-thank-title {
+        font-size: 1.5rem;
+    }
+
+    .pre-thank-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .pre-thank-instruction {
+        font-size: 1.1rem;
+    }
+
+    .pre-thank-error-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

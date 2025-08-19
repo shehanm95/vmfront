@@ -1,0 +1,125 @@
+/* Add to your CSS file */
+.date-selection-container {
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flatpickr-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+
+.available-dates-list {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.available-dates-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.available-dates-list li {
+    padding: 8px 12px;
+    margin: 4px 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.available-dates-list li.selected {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+.available-dates-list li:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* cahnge accent */
+
+/* Override Flatpickr theme colors with blue palette */
+.flatpickr-calendar {
+    --fp-primary-color: #3b82f6;
+    /* blue-500 */
+    --fp-primary-color-hover: #2563eb;
+    /* blue-600 */
+    --fp-primary-color-text: #ffffff;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover {
+    background: var(--primary);
+    border-color: var(--fp-primary-color);
+    color: var(--fp-primary-color-text);
+}
+
+.flatpickr-day:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--fp-primary-color-text);
+}
+
+.flatpickr-day.today {
+    border-color: var(--fp-primary-color);
+}
+
+.flatpickr-day.today:hover,
+.flatpickr-day.today:focus {
+    background: rgb(77, 166, 255);
+    color: var(--fp-primary-color-text);
+    font-weight: 600;
+}
+
+/* disabled */
+/* Custom disabled day styles */
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed:hover {
+    color: #acacac !important;
+    /* Light gray text */
+    /* background: #f8f9fa !important; */
+    /* Very light background */
+    border-color: transparent !important;
+    cursor: not-allowed;
+}
+
+/* Optionally style "in-between" disabled days differently */
+.flatpickr-day.inRange.flatpickr-disabled {
+    /* background: #e9ecef !important; */
+    /* border-color: #e9ecef !important; */
+}
+
+.flatpickr-day:hover {
+    background-color: #2563eb !important;
+}
+
+.flatpickr-disabled:hover {
+    background-color: #dde8ff !important;
+}
+
+.flatpickr-day {
+    font-weight: 600 !important;
+}
+
+.flatpickr-day {
+    font-weight: 600 !important;
+}
+
+.flatpickr-day.flatpickr-disabled {
+    font-weight: 300 !important;
+}
+
+.flatpickr-input {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+}

@@ -1,0 +1,26 @@
+.frontSideBar {
+    width: 300px;
+    background-color: var(--primary);
+    height: 100vh;
+    position: relative;
+    color: var(--light);
+}
+
+.sideBarButton {
+    width: 90%;
+    margin: 5%;
+    height: 50px;
+    background-color: var(--light2);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 5%;
+}
+
+
+
+.sideBarButton i {
+    font-size: 20px;
+}

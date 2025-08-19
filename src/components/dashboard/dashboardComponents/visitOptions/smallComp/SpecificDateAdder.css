@@ -1,0 +1,102 @@
+.spd-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.spd-dates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 60px;
+    border: 1px solid var(--light2);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--light1);
+}
+
+.spd-date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--light);
+    border-radius: 6px;
+    border: 1px solid var(--light3);
+}
+
+.spd-date-value {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.spd-delete-icon {
+    color: var(--danger);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.spd-delete-icon:hover {
+    color: #d10000;
+}
+
+.spd-no-dates {
+    color: var(--disabled);
+    text-align: center;
+    margin: 0;
+}
+
+.spd-input-container {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.spd-date-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid var(--light2);
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--primary);
+    background-color: var(--light1);
+    transition: border-color 0.2s ease;
+}
+
+.spd-date-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.spd-add-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+
+.spd-add-button:disabled {
+    background-color: var(--disabled);
+    cursor: not-allowed;
+}
+
+/* Custom styling for date picker */
+.spd-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+    cursor: pointer;
+}
+
+.spd-date-input::-webkit-datetime-edit-fields-wrapper {
+    color: var(--placeHolderText);
+}

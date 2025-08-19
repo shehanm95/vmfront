@@ -1,0 +1,24 @@
+.set-current-profile,
+.set-profile-image {
+    height: 500px;
+}
+
+.profile-pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-pic-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}

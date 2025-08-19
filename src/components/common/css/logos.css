@@ -1,0 +1,8 @@
+.blueLogo {
+    height: clamp(40px, 3vmin, 60px);
+    margin-right: 10px;
+}
+
+.light-font {
+    color: var(--light);
+}

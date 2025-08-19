@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--light2);
+
+}
+
+.thankyouArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBar {
+    background-color: var(--light1);
+    box-shadow: 0px 3px 3px 0px rgb(148, 148, 148);
+    z-index: 1;
+}
+
+.topBar h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(30px, 6vmin, 70px);
+}
+
+.topBar h2 {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: clamp(20px, 3vmin, 50px);
+}
+
+.topBar h3 {
+    font-family: "Tinos", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: clamp(15px, 2vmin, 40px);
+}
+
+.front-content {
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+
+}
+
+.footer {
+    background-color: var(--primary);
+    min-height: 100px;
+    padding: 15px;
+    display: flex;
+    box-shadow: 0px -3px 3px 0px rgb(148, 148, 148);
+    z-index: 1;
+    color: var(--light);
+}
+
+
+.footerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.middle {
+    border-left: 4px solid var(--light1);
+    border-right: 4px solid var(--light1);
+}
+
+.backButton {
+    position: absolute;
+    background-color: var(--light2);
+    padding: 10px;
+    color: var(--primary);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+.mainBack {
+    opacity: 0;
+}
+
+.mainBack:hover {
+    opacity: 1;
+}
+
+.light-button {
+    border: none;
+    font-family: "Inter", sans-serif;
+}

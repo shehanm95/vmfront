@@ -1,0 +1,19 @@
+.visits-filter input {
+    width: 20%;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border: 1px solid var(--light2);
+    border-radius: 5px;
+    color: var(--primary);
+    background: var(--light);
+}
+
+.visits-filter select {
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border: 1px solid var(--light2);
+    border-radius: 5px;
+    color: var(--primary);
+    background: var(--light);
+}

@@ -1,0 +1,102 @@
+.field-container {
+    display: inline-block;
+    min-width: 400px;
+    gap: 20px;
+}
+
+.inner-container {
+    align-items: center;
+    padding: 15px;
+    background-color: var(--light1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.plusRoundButton {
+    background-color: var(--light2);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.filedHolderandAddButton {
+    background-color: var(--light1);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    display: inline-block;
+    max-width: 600px;
+}
+
+.time-range-error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.fieldHolder {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.field-container {
+    margin-bottom: 5px;
+}
+
+.plusRoundButton:hover {
+    background-color: var(--light3);
+    border: 1px solid var(--primary);
+
+}
+
+.filedHolderandAddButton {
+    display: flex;
+    align-items: end;
+}
+
+.fieldHolder {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filedHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.time-input {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 150px;
+    background-color: var(--light2);
+    transition: border-color 0.3s ease;
+}
+
+.time-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
