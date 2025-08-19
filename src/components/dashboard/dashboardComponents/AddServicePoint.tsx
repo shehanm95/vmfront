@@ -240,7 +240,9 @@ export const AddServicePoint = () => {
                 </div>
 
                 <div className="form-button-wrapper">
-
+                    <button onClick={() => navigate(links.moderatorDashboard.goToOptions)} type="button" className="me-2 form-save-button form-button ms-3">
+                        Go to Dashboard
+                    </button>
                     <button
                         type="submit"
                         className="form-save-button form-button"
@@ -250,11 +252,7 @@ export const AddServicePoint = () => {
                     </button>
                 </div>
             </form>
-            <RightAlign>
-                <button onClick={() => navigate(links.moderatorDashboard.goToOptions)} type="button" className="me-2 form-save-button form-button ms-3">
-                    Go to Dashboard
-                </button>
-            </RightAlign>
+
 
 
             {addOfficerQuestion &&
